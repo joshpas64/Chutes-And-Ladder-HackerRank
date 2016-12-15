@@ -8,3 +8,10 @@ Also to note, the algorithm that I have been using so far has generated correct 
 One note though, I have not yet fully commented and documented all my code but that will be coming soon and there are a couple more exception cases to handle as well as the djikstra approach but I'll add that later in different branches.
 
 Link to the full hackerRank problem <a href="https://www.hackerrank.com/challenges/the-quickest-way-up">here</a> for you to give a shot!
+
+Also <strong>NOTE</strong>: for some people, you may not be automatically allowed to use some C++ keywords like <em><strong>nullptr</strong></em>. One way to enable this is to, at the top of your CodeBlocks window go to:
+
+
+Settings->Compiler Settings->(On Selected Compiler a good default is:)GNU GCC Compiler, and BELOW at the <strong>Compiler Settings Tab</strong>, make sure to have the box->
+<strong>Have g++ follow the C++ 11 ISO C++ language standard [-std=c++0x]</strong> CHECKED.
+
