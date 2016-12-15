@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1481831486 source:c:\users\joshua\documents\codeblox projects\chutesandladders\main.cpp
+	<iostream>
+	<string>
+	"GameBoard.h"
+
+1481830975 c:\users\joshua\documents\codeblox projects\chutesandladders\include\gameboard.h
+	"Tile.h"
+	<sstream>
+	<string>
+
+1481831284 c:\users\joshua\documents\codeblox projects\chutesandladders\include\tile.h
+	"Transporter.h"
+
+1481832549 c:\users\joshua\documents\codeblox projects\chutesandladders\include\transporter.h
+	"GameBoardException.h"
+
+1481834852 source:c:\users\joshua\documents\codeblox projects\chutesandladders\src\gameboard.cpp
+	"GameBoard.h"
+	<iostream>
+
+1481834276 source:c:\users\joshua\documents\codeblox projects\chutesandladders\src\tile.cpp
+	"Tile.h"
+
+1481832568 source:c:\users\joshua\documents\codeblox projects\chutesandladders\src\transporter.cpp
+	"Transporter.h"
+
+1481832485 c:\users\joshua\documents\codeblox projects\chutesandladders\include\gameboardexception.h
+
+1481832485 source:c:\users\joshua\documents\codeblox projects\chutesandladders\src\gameboardexception.cpp
+	"GameBoardException.h"
+

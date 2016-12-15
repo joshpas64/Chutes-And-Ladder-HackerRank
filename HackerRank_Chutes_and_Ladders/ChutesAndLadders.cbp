@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ChutesAndLadders" />
+		<Option pch_mode="2" />
+		<Option compiler="tcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ChutesAndLadders" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ChutesAndLadders" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="tcc" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/GameBoard.h" />
+		<Unit filename="include/GameBoardException.h" />
+		<Unit filename="include/Tile.h" />
+		<Unit filename="include/Transporter.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/GameBoard.cpp" />
+		<Unit filename="src/GameBoardException.cpp" />
+		<Unit filename="src/Transporter.cpp" />
+		<Unit filename="src/tile.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
