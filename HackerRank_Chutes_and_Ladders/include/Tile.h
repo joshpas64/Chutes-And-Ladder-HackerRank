@@ -20,7 +20,7 @@ class Tile
         int getTileNum() const; 
         bool canPutTransporter() const; //Determine if a tile can be used as a source or destination for a chute or ladder
         // if it is a source or destination tile for any transporter object, it will always return false
-        void insertTransport(Transporter *transport, bool makeSource); //if the canPutTransporter() test passes, make this tile the source OR
+        void insertTransport(int source , int dest, bool makeSource); //if the canPutTransporter() test passes, make this tile the source OR
                                                                 // destination tile of a chute or ladder
         int getPotential() const; //When moving to a tile see, the tile it leads to if it is a chute or ladder source
     private:
