@@ -43,11 +43,10 @@ void GameBoard::insertLadders()
                     std::cout << "Sorry you can put a ladder there, that tile is taken, try again ..." << std::endl;//Output error message
                     continue; //Skip this iteration and move to next iteration of while loop
                 }
-                Transporter *currentLadder = new Transporter(source,dest); //Make a new transporter object ptr with the corresponding source
-                                                                        // and destination tiles
-                (gameTiles + source - 1)->insertTransport(currentLadder,true); //Make source tile associated with the chute or ladder marked as the
+                                                                                        // and destination tiles
+                (gameTiles + source - 1)->insertTransport(source, dest,true); //Make source tile associated with the chute or ladder marked as the
                                                                                                 //source tile of that transporter
-                (gameTiles + dest - 1)->insertTransport(currentLadder,false); // Make the destination associated with the chute or ladder marked as the destination tile 
+                (gameTiles + dest - 1)->insertTransport(source, dest,false); // Make the destination associated with the chute or ladder marked as the destination tile 
                                                                                                 //of that transporter
                 break; //Once all input is valid and verified break out of loop and exit method
             }
@@ -199,5 +198,5 @@ void GameBoard::runGame() //Full run through including the user input step all c
 }
 GameBoard::~GameBoard()
 {
-    delete gameTiles; //deallocate gameTiles array
+    delete[] gameTiles; //deallocate gameTiles array
 }
