@@ -55,19 +55,18 @@ bool Tile::canPutTransporter() const //Determine if a Tile has a chute or ladder
     return true; //If this is not the case, then it is available
 }
 
-void Tile::insertTransport(Transporter *transport, bool makeSource)
+void Tile::insertTransport(int source, int dest, bool makeSource)
 {
     if(tileTransporter != nullptr) //If for some reason the Tile already has a chute or ladder attached to it raise Exception
                                 // and delete the parameter transport object pointer since it is not valid in this context
     {
         throw GameBoardException();
-        delete transport;
     }
+    tileTransporter = new Transporter(source, dest);
     if(makeSource) 
         isSource = true; //Make this tile the source tile of the chute or ladder
     else if(makeSource == false) //Make this tile the destination tile of the chute or ladder
-        isDest = true;
-    tileTransporter = transport; //Make this tile associated with the transport pointer
+        isDest = true; //Make this tile associated with the transport pointer
 }
 int Tile::getPotential() const //Where the game logic actually comes into play
 /*
